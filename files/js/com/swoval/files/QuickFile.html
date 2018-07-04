@@ -167,10 +167,6 @@
                         <a href="FileType.html" title="An object that represents a file, directory or symbolic link.">FileType</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="FileWithFileType.html" title=""></a>
-                        <a href="FileWithFileType.html" title="">FileWithFileType</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
                         <a class="class" href="JSEntry.html" title=""></a>
                         <a href="JSEntry.html" title="">JSEntry</a>
                       </li><li class="current-entities indented3">
@@ -262,7 +258,7 @@
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Represents a file that will be returned by <a href="QuickList$.html#list(path:java.nio.file.Path,maxDepth:Int,followLinks:Boolean,filter:com.swoval.functional.Filter[_&gt;:com.swoval.files.QuickFile]):java.util.List[com.swoval.files.QuickFile]" class="extmbr" name="com.swoval.files.QuickList#list">QuickList.list</a>. Provides fast <a href="#isDirectory():Boolean" class="extmbr" name="com.swoval.files.QuickFile#isDirectory">QuickFile.isDirectory</a> and <a href="#isFile():Boolean" class="extmbr" name="com.swoval.files.QuickFile#isFile">QuickFile.isFile</a> methods that should not call stat (or the
-non-POSIX equivalent) on the * underlying file. Can be converted to a <span class="extype" name="java.io.File">java.io.File</span> or
+non-POSIX equivalent) on the underlying file. Can be converted to a <span class="extype" name="java.io.File">java.io.File</span> or
 <span class="extype" name="java.nio.file.Path">java.nio.file.Path</span> with <a href="#toFile():java.io.File" class="extmbr" name="com.swoval.files.QuickFile#toFile">QuickFile.toFile</a> and <a href="#toPath():java.nio.file.Path" class="extmbr" name="com.swoval.files.QuickFile#toPath">QuickFile.toPath</a>.
 </p></div><div class="toggleContainer block">
           <span class="toggle">
@@ -319,9 +315,9 @@ non-POSIX equivalent) on the * underlying file. Can be converted to a <span clas
         <div class="values members">
               <h3>Abstract Value Members</h3>
               <ol><li name="com.swoval.files.QuickFile#asFile" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="asFile():com.swoval.files.FileWithFileType"></a><a id="asFile():FileWithFileType"></a>
+      <a id="asFile():java.io.File"></a><a id="asFile():File"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/QuickFile.html#asFile():com.swoval.files.FileWithFileType" title="Permalink">
+      <a href="../../../com/swoval/files/QuickFile.html#asFile():java.io.File" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -330,15 +326,13 @@ non-POSIX equivalent) on the * underlying file. Can be converted to a <span clas
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asFile</span><span class="params">()</span><span class="result">: <a href="FileWithFileType.html" class="extype" name="com.swoval.files.FileWithFileType">FileWithFileType</a></span>
+        <span class="name">asFile</span><span class="params">()</span><span class="result">: <span class="extype" name="java.io.File">File</span></span>
       </span>
       
-      <p class="shortcomment cmt">Returns an instance of <a href="FileWithFileType.html" class="extype" name="com.swoval.files.FileWithFileType">FileWithFileType</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns an instance of <a href="FileWithFileType.html" class="extype" name="com.swoval.files.FileWithFileType">FileWithFileType</a>. Typically the implementation of <a href="" class="extype" name="com.swoval.files.QuickFile">QuickFile</a> while extend <a href="FileWithFileType.html" class="extype" name="com.swoval.files.FileWithFileType">FileWithFileType</a>. This method will then just cast the instance
-to <span class="extype" name="java.io.File">java.io.File</span>. Because the <a href="#isDirectory():Boolean" class="extmbr" name="com.swoval.files.QuickFile#isDirectory">QuickFile.isDirectory</a> and <a href="#isFile():Boolean" class="extmbr" name="com.swoval.files.QuickFile#isFile">QuickFile.isFile</a>
-methods will generally cache the value of the native file result returned by readdir (posix) or
-FindNextFile (windows) and use this value to compute <a href="#isDirectory():Boolean" class="extmbr" name="com.swoval.files.QuickFile#isDirectory">QuickFile.isDirectory</a> and <a href="#isFile():Boolean" class="extmbr" name="com.swoval.files.QuickFile#isFile">QuickFile.isFile</a>, the returned <a href="FileWithFileType.html" class="extype" name="com.swoval.files.FileWithFileType">FileWithFileType</a> is generally unsuitable to be used as
-a persistent value. Instead, use <a href="#toFile():java.io.File" class="extmbr" name="com.swoval.files.QuickFile#toFile">QuickFile.toFile</a>.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>An instance of FileWithFileType. This may just be a cast.</p></dd></dl></div>
+      <p class="shortcomment cmt">Returns an instance of <span class="extype" name="java.io.File">java.io.File</span> with fast implementations of <span class="extype" name="java.io.File.isFile">java.io.File.isFile</span> and <span class="extype" name="File.isDirectory">File.isDirectory</span>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns an instance of <span class="extype" name="java.io.File">java.io.File</span> with fast implementations of <span class="extype" name="java.io.File.isFile">java.io.File.isFile</span> and <span class="extype" name="File.isDirectory">File.isDirectory</span>. The <span class="extype" name="java.io.File.isFile">java.io.File.isFile</span> and <span class="extype" name="java.io.File.isDirectory">java.io.File.isDirectory</span> methods return the cached values returned by the native file result
+returned by readdir (posix) or FindNextFile (windows). This makes the result generically
+unsuitable for caching. Instead, use <a href="#toFile():java.io.File" class="extmbr" name="com.swoval.files.QuickFile#toFile">QuickFile.toFile</a>.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>An instance of <span class="extype" name="java.io.File">java.io.File</span></p></dd></dl></div>
     </li><li name="com.swoval.files.QuickFile#getFileName" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="getFileName():String"></a>
       <span class="permalink">

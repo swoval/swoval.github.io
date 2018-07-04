@@ -167,10 +167,6 @@
                         <a href="FileType.html" title="An object that represents a file, directory or symbolic link.">FileType</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="FileWithFileType.html" title=""></a>
-                        <a href="FileWithFileType.html" title="">FileWithFileType</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
                         <a class="class" href="JSEntry.html" title=""></a>
                         <a href="JSEntry.html" title="">JSEntry</a>
                       </li><li class="current-entities indented3">
@@ -261,10 +257,12 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="" href="../runtime/index.html"><span class="name">runtime</span></a>
+        <a title="Provides packages for interacting with the runtime environment." href="../runtime/index.html"><span class="name">runtime</span></a>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.swoval">swoval</a></dd></dl></div>
+      <p class="shortcomment cmt">Provides packages for interacting with the runtime environment.</p><div class="fullcomment"><div class="comment cmt"><p>Provides packages for interacting with the runtime environment. These are primarily relevant on
+the jvm and have little to no impact in scala.js.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.swoval">swoval</a></dd></dl></div>
     </li>
               </ul>
             </div>
@@ -469,22 +467,6 @@ factory <a href="FileCache$.html#apply[T&lt;:AnyRef](converter:com.swoval.files.
       <p class="shortcomment cmt">An object that represents a file, directory or symbolic link.</p><div class="fullcomment"><div class="comment cmt"><p>An object that represents a file, directory or symbolic link. It is possible for a file to be
 both a SymbolicLink and Directory or a File, but it should not be a Directory and a File
 </p></div></div>
-    </li><li name="com.swoval.files.FileWithFileType" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="FileWithFileTypeextendsFilewithFileType"></a><a id="FileWithFileType:FileWithFileType"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/index.html#FileWithFileTypeextendsFilewithFileType" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a title="" href="FileWithFileType.html"><span class="name">FileWithFileType</span></a><span class="result"> extends <span class="extype" name="java.io.File">File</span> with <a href="FileType.html" class="extype" name="com.swoval.files.FileType">FileType</a></span>
-      </span>
-      
-      
     </li><li name="com.swoval.files.JSEntry" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="JSEntry[T]extendsAnyRef"></a><a id="JSEntry[T]:JSEntry[T]"></a>
       <span class="permalink">
@@ -623,7 +605,7 @@ both a SymbolicLink and Directory or a File, but it should not be a Directory an
       </span>
       
       <p class="shortcomment cmt">Represents a file that will be returned by <a href="QuickList$.html#list(path:java.nio.file.Path,maxDepth:Int,followLinks:Boolean,filter:com.swoval.functional.Filter[_&gt;:com.swoval.files.QuickFile]):java.util.List[com.swoval.files.QuickFile]" class="extmbr" name="com.swoval.files.QuickList#list">QuickList.list</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a file that will be returned by <a href="QuickList$.html#list(path:java.nio.file.Path,maxDepth:Int,followLinks:Boolean,filter:com.swoval.functional.Filter[_&gt;:com.swoval.files.QuickFile]):java.util.List[com.swoval.files.QuickFile]" class="extmbr" name="com.swoval.files.QuickList#list">QuickList.list</a>. Provides fast <a href="QuickFile.html#isDirectory():Boolean" class="extmbr" name="com.swoval.files.QuickFile#isDirectory">QuickFile.isDirectory</a> and <a href="QuickFile.html#isFile():Boolean" class="extmbr" name="com.swoval.files.QuickFile#isFile">QuickFile.isFile</a> methods that should not call stat (or the
-non-POSIX equivalent) on the * underlying file. Can be converted to a <span class="extype" name="java.io.File">java.io.File</span> or
+non-POSIX equivalent) on the underlying file. Can be converted to a <span class="extype" name="java.io.File">java.io.File</span> or
 <span class="extype" name="java.nio.file.Path">java.nio.file.Path</span> with <a href="QuickFile.html#toFile():java.io.File" class="extmbr" name="com.swoval.files.QuickFile#toFile">QuickFile.toFile</a> and <a href="QuickFile.html#toPath():java.nio.file.Path" class="extmbr" name="com.swoval.files.QuickFile#toPath">QuickFile.toPath</a>.
 </p></div></div>
     </li><li name="com.swoval.files.QuickLister" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
