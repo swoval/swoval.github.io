@@ -207,10 +207,6 @@
                         <a href="PathWatchers$.html" title="">PathWatchers</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="object" href="" title=""></a>
-                        <a href="" title="">PlatformWatcher</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
                         <a class="trait" href="QuickFile.html" title="Represents a file that will be returned by QuickList.list."></a>
                         <a href="QuickFile.html" title="Represents a file that will be returned by QuickList.list.">QuickFile</a>
                       </li><li class="current-entities indented3">
@@ -227,8 +223,8 @@
                         <a href="QuickListers$.html" title="">QuickListers</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="trait" href="Registerable.html" title="Augments the java.nio.file.WatchService with a Registerable.register method."></a>
-                        <a href="Registerable.html" title="Augments the java.nio.file.WatchService with a Registerable.register method.">Registerable</a>
+                        <a class="trait" href="" title="Augments the java.nio.file.WatchService with a RegisterableWatchService.register method."></a>
+                        <a href="" title="Augments the java.nio.file.WatchService with a RegisterableWatchService.register method.">RegisterableWatchService</a>
                       </li><li class="current-entities indented3">
                         <a class="object" href="SymlinkWatcher$.html" title=""></a>
                         <a class="class" href="SymlinkWatcher.html" title="Monitors symlink targets."></a>
@@ -246,12 +242,12 @@
             </div>
           </div>
           <div id="content">
-            <body class="object value">
+            <body class="trait type">
       <div id="definition">
-        <div class="big-circle object">o</div>
+        <div class="big-circle trait">t</div>
         <p id="owner"><a href="../../index.html" class="extype" name="com">com</a>.<a href="../index.html" class="extype" name="com.swoval">swoval</a>.<a href="index.html" class="extype" name="com.swoval.files">files</a></p>
-        <h1>PlatformWatcher<span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html" title="Permalink">
+        <h1>RegisterableWatchService<span class="permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -261,19 +257,22 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">PlatformWatcher</span>
+        <span class="name">RegisterableWatchService</span><span class="result"> extends <span class="extype" name="java.nio.file.WatchService">WatchService</span></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Augments the <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/WatchService.html" target="_blank">java.nio.file.WatchService</a>
+with a <a href="#register(path:java.nio.file.Path,kinds:java.nio.file.WatchEvent.Kind[_]*):java.nio.file.WatchKey" class="extmbr" name="com.swoval.files.RegisterableWatchService#register">RegisterableWatchService.register</a> method. This is because <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/Path.html.register" target="_blank">https://docs.oracle.com/javase/7/docs/api/java/nio/file/Path.html.register</a>
+does not work on custom watch services.
+</p></div><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="java.nio.file.WatchService">WatchService</span>, <span class="extype" name="java.io.Closeable">Closeable</span>, <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -299,7 +298,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="com.swoval.files.PlatformWatcher"><span>PlatformWatcher</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="com.swoval.files.RegisterableWatchService"><span>RegisterableWatchService</span></li><li class="in" name="java.nio.file.WatchService"><span>WatchService</span></li><li class="in" name="java.io.Closeable"><span>Closeable</span></li><li class="in" name="java.lang.AutoCloseable"><span>AutoCloseable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -321,15 +320,117 @@
 
         
 
-        
+        <div class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="java.nio.file.WatchService#close" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="close():Unit"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#close():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">close</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>WatchService → Closeable → AutoCloseable</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.io.IOException]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="java.nio.file.WatchService#poll" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="poll(x$1:Long,x$2:java.util.concurrent.TimeUnit):java.nio.file.WatchKey"></a><a id="poll(Long,TimeUnit):WatchKey"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#poll(x$1:Long,x$2:java.util.concurrent.TimeUnit):java.nio.file.WatchKey" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">poll</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="java.util.concurrent.TimeUnit">TimeUnit</span></span>)</span><span class="result">: <span class="extype" name="java.nio.file.WatchKey">WatchKey</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>WatchService</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="java.nio.file.WatchService#poll" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="poll():java.nio.file.WatchKey"></a><a id="poll():WatchKey"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#poll():java.nio.file.WatchKey" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">poll</span><span class="params">()</span><span class="result">: <span class="extype" name="java.nio.file.WatchKey">WatchKey</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>WatchService</dd></dl></div>
+    </li><li name="com.swoval.files.RegisterableWatchService#register" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="register(path:java.nio.file.Path,kinds:java.nio.file.WatchEvent.Kind[_]*):java.nio.file.WatchKey"></a><a id="register(Path,Kind[_]*):WatchKey"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#register(path:java.nio.file.Path,kinds:java.nio.file.WatchEvent.Kind[_]*):java.nio.file.WatchKey" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">register</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="kinds">kinds: <span class="extype" name="java.nio.file.WatchEvent.Kind">Kind</span>[_]*</span>)</span><span class="result">: <span class="extype" name="java.nio.file.WatchKey">WatchKey</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Register a path for monitoring.</p><div class="fullcomment"><div class="comment cmt"><p>Register a path for monitoring.
+</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>The path to monitor.</p></dd><dt class="param">kinds</dt><dd class="cmt"><p>The types of events to monitor.</p></dd><dt>returns</dt><dd class="cmt"><p>WatchKey the key returned by the WatchService</p></dd></dl></div>
+    </li><li name="java.nio.file.WatchService#take" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="take():java.nio.file.WatchKey"></a><a id="take():WatchKey"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#take():java.nio.file.WatchKey" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">take</span><span class="params">()</span><span class="result">: <span class="extype" name="java.nio.file.WatchKey">WatchKey</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>WatchService</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
 
         <div class="values members">
-              <h3>Value Members</h3>
+              <h3>Concrete Value Members</h3>
               <ol>
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -345,7 +446,7 @@
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html###():Int" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -361,7 +462,7 @@
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -377,7 +478,7 @@
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -393,7 +494,7 @@
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#clone():Object" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -417,7 +518,7 @@
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -433,7 +534,7 @@
     </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#equals(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#equals(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -449,7 +550,7 @@
     </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#finalize():Unit" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -471,7 +572,7 @@
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#getClass():Class[_]" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -490,7 +591,7 @@
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#hashCode():Int" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#hashCode():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -509,7 +610,7 @@
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -522,58 +623,10 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.swoval.files.PlatformWatcher#make" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="make(callback:com.swoval.functional.Consumer[com.swoval.files.PathWatchers.Event],executor:com.swoval.files.Executor,directoryRegistry:com.swoval.files.DirectoryRegistry):com.swoval.files.PathWatcher"></a><a id="make(Consumer[Event],Executor,DirectoryRegistry):PathWatcher"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#make(callback:com.swoval.functional.Consumer[com.swoval.files.PathWatchers.Event],executor:com.swoval.files.Executor,directoryRegistry:com.swoval.files.DirectoryRegistry):com.swoval.files.PathWatcher" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">make</span><span class="params">(<span name="callback">callback: <a href="../functional/Consumer.html" class="extype" name="com.swoval.functional.Consumer">Consumer</a>[<a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>]</span>, <span name="executor">executor: <a href="Executor.html" class="extype" name="com.swoval.files.Executor">Executor</a></span>, <span name="directoryRegistry">directoryRegistry: <a href="DirectoryRegistry.html" class="extype" name="com.swoval.files.DirectoryRegistry">DirectoryRegistry</a></span>)</span><span class="result">: <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a></span>
-      </span>
-      
-      
-    </li><li name="com.swoval.files.PlatformWatcher#make" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="make(callback:com.swoval.functional.Consumer[com.swoval.files.PathWatchers.Event],registerable:com.swoval.files.Registerable,internalExecutor:com.swoval.files.Executor,directoryRegistry:com.swoval.files.DirectoryRegistry):com.swoval.files.PathWatcher"></a><a id="make(Consumer[Event],Registerable,Executor,DirectoryRegistry):PathWatcher"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#make(callback:com.swoval.functional.Consumer[com.swoval.files.PathWatchers.Event],registerable:com.swoval.files.Registerable,internalExecutor:com.swoval.files.Executor,directoryRegistry:com.swoval.files.DirectoryRegistry):com.swoval.files.PathWatcher" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">make</span><span class="params">(<span name="callback">callback: <a href="../functional/Consumer.html" class="extype" name="com.swoval.functional.Consumer">Consumer</a>[<a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>]</span>, <span name="registerable">registerable: <a href="Registerable.html" class="extype" name="com.swoval.files.Registerable">Registerable</a></span>, <span name="internalExecutor">internalExecutor: <a href="Executor.html" class="extype" name="com.swoval.files.Executor">Executor</a></span>, <span name="directoryRegistry">directoryRegistry: <a href="DirectoryRegistry.html" class="extype" name="com.swoval.files.DirectoryRegistry">DirectoryRegistry</a></span>)</span><span class="result">: <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a></span>
-      </span>
-      
-      
-    </li><li name="com.swoval.files.PlatformWatcher#make" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="make(callback:com.swoval.functional.Consumer[com.swoval.files.PathWatchers.Event],registerable:com.swoval.files.Registerable,callbackExecutor:com.swoval.files.Executor,internalExecutor:com.swoval.files.Executor,directoryRegistry:com.swoval.files.DirectoryRegistry):com.swoval.files.PathWatcher"></a><a id="make(Consumer[Event],Registerable,Executor,Executor,DirectoryRegistry):PathWatcher"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#make(callback:com.swoval.functional.Consumer[com.swoval.files.PathWatchers.Event],registerable:com.swoval.files.Registerable,callbackExecutor:com.swoval.files.Executor,internalExecutor:com.swoval.files.Executor,directoryRegistry:com.swoval.files.DirectoryRegistry):com.swoval.files.PathWatcher" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">make</span><span class="params">(<span name="callback">callback: <a href="../functional/Consumer.html" class="extype" name="com.swoval.functional.Consumer">Consumer</a>[<a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>]</span>, <span name="registerable">registerable: <a href="Registerable.html" class="extype" name="com.swoval.files.Registerable">Registerable</a></span>, <span name="callbackExecutor">callbackExecutor: <a href="Executor.html" class="extype" name="com.swoval.files.Executor">Executor</a></span>, <span name="internalExecutor">internalExecutor: <a href="Executor.html" class="extype" name="com.swoval.files.Executor">Executor</a></span>, <span name="directoryRegistry">directoryRegistry: <a href="DirectoryRegistry.html" class="extype" name="com.swoval.files.DirectoryRegistry">DirectoryRegistry</a></span>)</span><span class="result">: <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -589,7 +642,7 @@
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#notify():Unit" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -608,7 +661,7 @@
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#notifyAll():Unit" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -627,7 +680,7 @@
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -643,7 +696,7 @@
     </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#toString():String" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#toString():String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -659,7 +712,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#wait():Unit" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -681,7 +734,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -703,7 +756,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/PlatformWatcher$.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../../com/swoval/files/RegisterableWatchService.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -734,7 +787,13 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="java.nio.file.WatchService">
+              <h3>Inherited from <span class="extype" name="java.nio.file.WatchService">WatchService</span></h3>
+            </div><div class="parent" name="java.io.Closeable">
+              <h3>Inherited from <span class="extype" name="java.io.Closeable">Closeable</span></h3>
+            </div><div class="parent" name="java.lang.AutoCloseable">
+              <h3>Inherited from <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
