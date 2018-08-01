@@ -119,8 +119,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.swoval">swoval</a></dd></dl></div>
     </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="trait" href="Consumer.html" title="Represents an operation that takes an input and returns no result"></a>
-                        <a href="Consumer.html" title="Represents an operation that takes an input and returns no result">Consumer</a>
+                        <a class="trait" href="Consumer.html" title="Represents an operation that takes an input and returns no result."></a>
+                        <a href="Consumer.html" title="Represents an operation that takes an input and returns no result.">Consumer</a>
                       </li><li class="current-entities indented3">
                         <a class="object" href="Either$.html" title=""></a>
                         <a class="class" href="" title="Represents a value that can be one of two types."></a>
@@ -158,7 +158,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">Either</span><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">Either</span><span class="tparams">[<span name="L">+L</span>, <span name="R">+R</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
 
@@ -258,42 +258,6 @@ it is right biased, but does not define all of the combinators that the scala ve
       
       <p class="shortcomment cmt">Check whether this is a Right projection.</p><div class="fullcomment"><div class="comment cmt"><p>Check whether this is a Right projection.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this is a Right projection</p></dd></dl></div>
-    </li><li name="com.swoval.functional.Either#left" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="left():com.swoval.functional.Either.Left[L,R]"></a><a id="left():Left[L,R]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/functional/Either.html#left():com.swoval.functional.Either.Left[L,R]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">left</span><span class="params">()</span><span class="result">: <a href="Either$$Left.html" class="extype" name="com.swoval.functional.Either.Left">Left</a>[<span class="extype" name="com.swoval.functional.Either.L">L</span>, <span class="extype" name="com.swoval.functional.Either.R">R</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Returns the Left projection
-</p><div class="fullcomment"><div class="comment cmt"><p>Returns the Left projection
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Left projection</p></dd></dl></div>
-    </li><li name="com.swoval.functional.Either#right" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="right():com.swoval.functional.Either.Right[L,R]"></a><a id="right():Right[L,R]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/functional/Either.html#right():com.swoval.functional.Either.Right[L,R]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">right</span><span class="params">()</span><span class="result">: <a href="Either$$Right.html" class="extype" name="com.swoval.functional.Either.Right">Right</a>[<span class="extype" name="com.swoval.functional.Either.L">L</span>, <span class="extype" name="com.swoval.functional.Either.R">R</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Returns the Right projection
-</p><div class="fullcomment"><div class="comment cmt"><p>Returns the Right projection
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Right projection</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -364,42 +328,6 @@ it is right biased, but does not define all of the combinators that the scala ve
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="com.swoval.functional.Either#castLeft" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="castLeft[L,R,T&lt;:L](clazz:Class[T]):com.swoval.functional.Either[T,R]"></a><a id="castLeft[L,R,T&lt;:L](Class[T]):Either[T,R]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/functional/Either.html#castLeft[L,R,T&lt;:L](clazz:Class[T]):com.swoval.functional.Either[T,R]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">castLeft</span><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>, <span name="T">T &lt;: <span class="extype" name="com.swoval.functional.Either.castLeft.L">L</span></span>]</span><span class="params">(<span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="com.swoval.functional.Either.castLeft.T">T</span>]</span>)</span><span class="result">: <a href="" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.castLeft.T">T</span>, <span class="extype" name="com.swoval.functional.Either.castLeft.R">R</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Casts an either to a more specific left type
-</p><div class="fullcomment"><div class="comment cmt"><p>Casts an either to a more specific left type
-</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>The original left type</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>The right type</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>The downcasted left type</p></dd><dt class="param">clazz</dt><dd class="cmt"><p>The left type to downcast to</p></dd><dt>returns</dt><dd class="cmt"><p>The original either with the left type downcasted to T</p></dd></dl></div>
-    </li><li name="com.swoval.functional.Either#castRight" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="castRight[L,R,T&lt;:R](clazz:Class[T]):com.swoval.functional.Either[L,T]"></a><a id="castRight[L,R,T&lt;:R](Class[T]):Either[L,T]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/functional/Either.html#castRight[L,R,T&lt;:R](clazz:Class[T]):com.swoval.functional.Either[L,T]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">castRight</span><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>, <span name="T">T &lt;: <span class="extype" name="com.swoval.functional.Either.castRight.R">R</span></span>]</span><span class="params">(<span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="com.swoval.functional.Either.castRight.T">T</span>]</span>)</span><span class="result">: <a href="" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.castRight.L">L</span>, <span class="extype" name="com.swoval.functional.Either.castRight.T">T</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Casts an either to a more specific right type
-</p><div class="fullcomment"><div class="comment cmt"><p>Casts an either to a more specific right type
-</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>The original left type</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>The right type</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>The downcasted right type</p></dd><dt class="param">clazz</dt><dd class="cmt"><p>The left type to downcast to</p></dd><dt>returns</dt><dd class="cmt"><p>The original either with the right type downcasted to T</p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -515,23 +443,6 @@ the value is a right first.
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="com.swoval.functional.Either#getOrElse" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getOrElse(r:R):R"></a><a id="getOrElse(R):R"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/functional/Either.html#getOrElse(r:R):R" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getOrElse</span><span class="params">(<span name="r">r: <span class="extype" name="com.swoval.functional.Either.R">R</span></span>)</span><span class="result">: <span class="extype" name="com.swoval.functional.Either.R">R</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Get the right projected value of the either or a provided default value.</p><div class="fullcomment"><div class="comment cmt"><p>Get the right projected value of the either or a provided default value.
-</p></div><dl class="paramcmts block"><dt class="param">r</dt><dd class="cmt"><p>the default value</p></dd><dt>returns</dt><dd class="cmt"><p>the wrapped value if this is a right projection, otherwise the default</p></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">

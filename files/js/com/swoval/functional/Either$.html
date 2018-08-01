@@ -119,8 +119,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.swoval">swoval</a></dd></dl></div>
     </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="trait" href="Consumer.html" title="Represents an operation that takes an input and returns no result"></a>
-                        <a href="Consumer.html" title="Represents an operation that takes an input and returns no result">Consumer</a>
+                        <a class="trait" href="Consumer.html" title="Represents an operation that takes an input and returns no result."></a>
+                        <a href="Consumer.html" title="Represents an operation that takes an input and returns no result.">Consumer</a>
                       </li><li class="current-entities indented3">
                         <a class="object" href="" title=""></a>
                         <a class="class" href="Either.html" title="Represents a value that can be one of two types."></a>
@@ -215,7 +215,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.swoval.functional.Either.Left" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="com.swoval.functional.Either.Left" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Left[L,R]extendsEither[L,R]"></a><a id="Left[L,R]:Left[L,R]"></a>
       <span class="permalink">
       <a href="../../../com/swoval/functional/Either$.html#Left[L,R]extendsEither[L,R]" title="Permalink">
@@ -227,10 +227,11 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Either$$Left.html"><span class="name">Left</span></a><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>]</span><span class="result"> extends <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.Left.L">L</span>, <span class="extype" name="com.swoval.functional.Either.Left.R">R</span>]</span>
+        <a title="A left projected com.swoval.functional.Either." href="Either$$Left.html"><span class="name">Left</span></a><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>]</span><span class="result"> extends <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.Left.L">L</span>, <span class="extype" name="com.swoval.functional.Either.Left.R">R</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">A left projected <a href="Either.html" class="extype" name="com.swoval.functional.Either">com.swoval.functional.Either</a>.</p><div class="fullcomment"><div class="comment cmt"><p>A left projected <a href="Either.html" class="extype" name="com.swoval.functional.Either">com.swoval.functional.Either</a>.
+</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>the left type</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>the right type</p></dd></dl></div>
     </li><li name="com.swoval.functional.Either.NotLeftException" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NotLeftExceptionextendsRuntimeException"></a><a id="NotLeftException:NotLeftException"></a>
       <span class="permalink">
@@ -243,10 +244,10 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Either$$NotLeftException.html"><span class="name">NotLeftException</span></a><span class="result"> extends <span class="extype" name="scala.RuntimeException">RuntimeException</span></span>
+        <a title="An error that is thrown if an attempt is made to project an Either to com.swoval.functional.Either.Left when the object is actually an instance of com.swoval.functional.Either.Right." href="Either$$NotLeftException.html"><span class="name">NotLeftException</span></a><span class="result"> extends <span class="extype" name="scala.RuntimeException">RuntimeException</span></span>
       </span>
       
-      
+      <p class="shortcomment cmt">An error that is thrown if an attempt is made to project an Either to <a href="Either$$Left.html" class="extype" name="com.swoval.functional.Either.Left">com.swoval.functional.Either.Left</a> when the object is actually an instance of <a href="Either$$Right.html" class="extype" name="com.swoval.functional.Either.Right">com.swoval.functional.Either.Right</a>.</p>
     </li><li name="com.swoval.functional.Either.NotRightException" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NotRightExceptionextendsRuntimeException"></a><a id="NotRightException:NotRightException"></a>
       <span class="permalink">
@@ -259,11 +260,11 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Either$$NotRightException.html"><span class="name">NotRightException</span></a><span class="result"> extends <span class="extype" name="scala.RuntimeException">RuntimeException</span></span>
+        <a title="An error that is thrown if an attempt is made to project an Either to com.swoval.functional.Either.Right when the object is actually an instance of com.swoval.functional.Either.Left." href="Either$$NotRightException.html"><span class="name">NotRightException</span></a><span class="result"> extends <span class="extype" name="scala.RuntimeException">RuntimeException</span></span>
       </span>
       
-      
-    </li><li name="com.swoval.functional.Either.Right" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">An error that is thrown if an attempt is made to project an Either to <a href="Either$$Right.html" class="extype" name="com.swoval.functional.Either.Right">com.swoval.functional.Either.Right</a> when the object is actually an instance of <a href="Either$$Left.html" class="extype" name="com.swoval.functional.Either.Left">com.swoval.functional.Either.Left</a>.</p>
+    </li><li name="com.swoval.functional.Either.Right" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Right[L,R]extendsEither[L,R]"></a><a id="Right[L,R]:Right[L,R]"></a>
       <span class="permalink">
       <a href="../../../com/swoval/functional/Either$.html#Right[L,R]extendsEither[L,R]" title="Permalink">
@@ -275,10 +276,11 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Either$$Right.html"><span class="name">Right</span></a><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>]</span><span class="result"> extends <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.Right.L">L</span>, <span class="extype" name="com.swoval.functional.Either.Right.R">R</span>]</span>
+        <a title="A right projected com.swoval.functional.Either." href="Either$$Right.html"><span class="name">Right</span></a><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>]</span><span class="result"> extends <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.Right.L">L</span>, <span class="extype" name="com.swoval.functional.Either.Right.R">R</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">A right projected <a href="Either.html" class="extype" name="com.swoval.functional.Either">com.swoval.functional.Either</a>.</p><div class="fullcomment"><div class="comment cmt"><p>A right projected <a href="Either.html" class="extype" name="com.swoval.functional.Either">com.swoval.functional.Either</a>.
+</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>the left type</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>the right type</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -448,6 +450,23 @@
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="com.swoval.functional.Either#getOrElse" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getOrElse[T](either:com.swoval.functional.Either[_,_&lt;:T],t:T):T"></a><a id="getOrElse[T](Either[_,_&lt;:T],T):T"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/functional/Either$.html#getOrElse[T](either:com.swoval.functional.Either[_,_&lt;:T],t:T):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getOrElse</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="either">either: <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[_, _ &lt;: <span class="extype" name="com.swoval.functional.Either.getOrElse.T">T</span>]</span>, <span name="t">t: <span class="extype" name="com.swoval.functional.Either.getOrElse.T">T</span></span>)</span><span class="result">: <span class="extype" name="com.swoval.functional.Either.getOrElse.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Get the right projected value of the either or a provided default value.</p><div class="fullcomment"><div class="comment cmt"><p>Get the right projected value of the either or a provided default value.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the default type</p></dd><dt class="param">either</dt><dd class="cmt"><p>the either from which the method extracts the result if it is a <span class="extype" name="">com.swoval.functional.Either.Right</span>.</p></dd><dt class="param">t</dt><dd class="cmt"><p>the default value</p></dd><dt>returns</dt><dd class="cmt"><p>the wrapped value if this is a right projection, otherwise the default</p></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
@@ -498,9 +517,27 @@
         <span class="name">left</span><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>, <span name="T">T &lt;: <span class="extype" name="com.swoval.functional.Either.left.L">L</span></span>]</span><span class="params">(<span name="value">value: <span class="extype" name="com.swoval.functional.Either.left.T">T</span></span>)</span><span class="result">: <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.left.L">L</span>, <span class="extype" name="com.swoval.functional.Either.left.R">R</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Returns a left projected either
-</p><div class="fullcomment"><div class="comment cmt"><p>Returns a left projected either
-</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>The type of the left parameter of the result</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>The type of the right parameter of the result</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>A refinement type that allows us to wrap subtypes of L</p></dd><dt class="param">value</dt><dd class="cmt"><p>The value to wrap</p></dd><dt>returns</dt><dd class="cmt"><p>A left projected either</p></dd></dl></div>
+      <p class="shortcomment cmt">Returns a left projected either.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a left projected either.
+</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>the type of the left parameter of the result</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>the type of the right parameter of the result</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>a refinement type that allows us to wrap subtypes of L</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value to wrap</p></dd><dt>returns</dt><dd class="cmt"><p>A left projected either</p></dd></dl></div>
+    </li><li name="com.swoval.functional.Either#leftProjection" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="leftProjection[L,R](either:com.swoval.functional.Either[L,R]):com.swoval.functional.Either.Left[L,R]"></a><a id="leftProjection[L,R](Either[L,R]):Left[L,R]"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/functional/Either$.html#leftProjection[L,R](either:com.swoval.functional.Either[L,R]):com.swoval.functional.Either.Left[L,R]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">leftProjection</span><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>]</span><span class="params">(<span name="either">either: <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.leftProjection.L">L</span>, <span class="extype" name="com.swoval.functional.Either.leftProjection.R">R</span>]</span>)</span><span class="result">: <a href="Either$$Left.html" class="extype" name="com.swoval.functional.Either.Left">Left</a>[<span class="extype" name="com.swoval.functional.Either.leftProjection.L">L</span>, <span class="extype" name="com.swoval.functional.Either.leftProjection.R">R</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the Left projection for the provided Either or throws an exception if the Either is
+actually an instance of <a href="Either$$Right.html" class="extype" name="com.swoval.functional.Either.Right">com.swoval.functional.Either.Right</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the Left projection for the provided Either or throws an exception if the Either is
+actually an instance of <a href="Either$$Right.html" class="extype" name="com.swoval.functional.Either.Right">com.swoval.functional.Either.Right</a>.
+</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>the left type of the either.</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>the right type of the either.</p></dd><dt class="param">either</dt><dd class="cmt"><p>the either, assumed to be an instance of left, that will</p></dd><dt>returns</dt><dd class="cmt"><p>a Left projection.</p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -570,9 +607,27 @@
         <span class="name">right</span><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>, <span name="T">T &lt;: <span class="extype" name="com.swoval.functional.Either.right.R">R</span></span>]</span><span class="params">(<span name="value">value: <span class="extype" name="com.swoval.functional.Either.right.T">T</span></span>)</span><span class="result">: <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.right.L">L</span>, <span class="extype" name="com.swoval.functional.Either.right.R">R</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Returns a right projected either
-</p><div class="fullcomment"><div class="comment cmt"><p>Returns a right projected either
-</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>The type of the left parameter of the result</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>The type of the right parameter of the result</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>A refinement type that allows us to wrap subtypes of R</p></dd><dt class="param">value</dt><dd class="cmt"><p>The value to wrap</p></dd><dt>returns</dt><dd class="cmt"><p>A right projected either</p></dd></dl></div>
+      <p class="shortcomment cmt">Returns a right projected either.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a right projected either.
+</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>the type of the left parameter of the result</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>the type of the right parameter of the result</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>a refinement type that allows us to wrap subtypes of R</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value to wrap</p></dd><dt>returns</dt><dd class="cmt"><p>a right projected either.</p></dd></dl></div>
+    </li><li name="com.swoval.functional.Either#rightProjection" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rightProjection[L,R](either:com.swoval.functional.Either[L,R]):com.swoval.functional.Either.Right[L,R]"></a><a id="rightProjection[L,R](Either[L,R]):Right[L,R]"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/functional/Either$.html#rightProjection[L,R](either:com.swoval.functional.Either[L,R]):com.swoval.functional.Either.Right[L,R]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rightProjection</span><span class="tparams">[<span name="L">L</span>, <span name="R">R</span>]</span><span class="params">(<span name="either">either: <a href="Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="com.swoval.functional.Either.rightProjection.L">L</span>, <span class="extype" name="com.swoval.functional.Either.rightProjection.R">R</span>]</span>)</span><span class="result">: <a href="Either$$Right.html" class="extype" name="com.swoval.functional.Either.Right">Right</a>[<span class="extype" name="com.swoval.functional.Either.rightProjection.L">L</span>, <span class="extype" name="com.swoval.functional.Either.rightProjection.R">R</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the Right projection for the provided Either or throws an exception if the Either is
+actually an instance of <a href="Either$$Left.html" class="extype" name="com.swoval.functional.Either.Left">com.swoval.functional.Either.Left</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the Right projection for the provided Either or throws an exception if the Either is
+actually an instance of <a href="Either$$Left.html" class="extype" name="com.swoval.functional.Either.Left">com.swoval.functional.Either.Left</a>.
+</p></div><dl class="paramcmts block"><dt class="tparam">L</dt><dd class="cmt"><p>the left type of the either.</p></dd><dt class="tparam">R</dt><dd class="cmt"><p>the right type of the either.</p></dd><dt class="param">either</dt><dd class="cmt"><p>the either, assumed to be an instance of left, that will</p></dd><dt>returns</dt><dd class="cmt"><p>a Right projection.</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
