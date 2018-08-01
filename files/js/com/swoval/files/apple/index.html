@@ -135,6 +135,10 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.swoval.files">files</a></dd></dl></div>
     </li><li class="current-entities indented4">
                         <span class="separator"></span>
+                        <a class="class" href="ClosedFileEventMonitorException.html" title=""></a>
+                        <a href="ClosedFileEventMonitorException.html" title="">ClosedFileEventMonitorException</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
                         <a class="class" href="Event.html" title="Provides information about an event provided by the apple file events api."></a>
                         <a href="Event.html" title="Provides information about an event provided by the apple file events api.">Event</a>
                       </li><li class="current-entities indented4">
@@ -142,9 +146,13 @@
                         <a class="class" href="FileEvent.html" title="Simple wrapper around the event provided by the apple file system event callback."></a>
                         <a href="FileEvent.html" title="Simple wrapper around the event provided by the apple file system event callback.">FileEvent</a>
                       </li><li class="current-entities indented4">
-                        <a class="object" href="FileEventsApi$.html" title=""></a>
-                        <a class="class" href="FileEventsApi.html" title=""></a>
-                        <a href="FileEventsApi.html" title="">FileEventsApi</a>
+                        <span class="separator"></span>
+                        <a class="class" href="FileEventMonitor.html" title=""></a>
+                        <a href="FileEventMonitor.html" title="">FileEventMonitor</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="FileEventMonitors$.html" title=""></a>
+                        <a href="FileEventMonitors$.html" title="">FileEventMonitors</a>
                       </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="object" href="Flags$.html" title=""></a>
@@ -212,7 +220,23 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.swoval.files.apple.Event" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="com.swoval.files.apple.ClosedFileEventMonitorException" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClosedFileEventMonitorExceptionextendsIOException"></a><a id="ClosedFileEventMonitorException:ClosedFileEventMonitorException"></a>
+      <span class="permalink">
+      <a href="../../../../com/swoval/files/apple/index.html#ClosedFileEventMonitorExceptionextendsIOException" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="ClosedFileEventMonitorException.html"><span class="name">ClosedFileEventMonitorException</span></a><span class="result"> extends <span class="extype" name="java.io.IOException">IOException</span></span>
+      </span>
+      
+      
+    </li><li name="com.swoval.files.apple.Event" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="EventextendsAnyRef"></a><a id="Event:Event"></a>
       <span class="permalink">
       <a href="../../../../com/swoval/files/apple/index.html#EventextendsAnyRef" title="Permalink">
@@ -248,10 +272,10 @@ returned by the apple file event.
       
       <p class="shortcomment cmt">Simple wrapper around the event provided by the apple file system event callback.</p><div class="fullcomment"><div class="comment cmt"><p>Simple wrapper around the event provided by the apple file system event callback.
 </p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://developer.apple.com/documentation/coreservices/fseventstreamcallback" target="_blank">FsEventStreamCallback</a></p></span></dd></dl></div>
-    </li><li name="com.swoval.files.apple.FileEventsApi" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="FileEventsApiextendsAutoCloseable"></a><a id="FileEventsApi:FileEventsApi"></a>
+    </li><li name="com.swoval.files.apple.FileEventMonitor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FileEventMonitorextendsAutoCloseable"></a><a id="FileEventMonitor:FileEventMonitor"></a>
       <span class="permalink">
-      <a href="../../../../com/swoval/files/apple/index.html#FileEventsApiextendsAutoCloseable" title="Permalink">
+      <a href="../../../../com/swoval/files/apple/index.html#FileEventMonitorextendsAutoCloseable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -260,13 +284,13 @@ returned by the apple file event.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="FileEventsApi.html"><span class="name">FileEventsApi</span></a><span class="result"> extends <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
+        <a title="" href="FileEventMonitor.html"><span class="name">FileEventMonitor</span></a><span class="result"> extends <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@JSExportTopLevel</span><span class="args">(<span>
       
-      <span class="defval" name="&quot;com.swoval.files.apple.FileEventsApi&quot;">...</span>
+      <span class="defval" name="&quot;com.swoval.files.apple.FileEventsMonitor&quot;">...</span>
     </span>)</span>
               
                 <span class="name">@JSExportAll</span><span class="args">()</span>
@@ -280,10 +304,10 @@ returned by the apple file event.
         <div class="values members">
               <h3>Value Members</h3>
               <ol>
-                <li name="com.swoval.files.apple.FileEventsApi" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="FileEventsApi"></a><a id="FileEventsApi:FileEventsApi"></a>
+                <li name="com.swoval.files.apple.FileEventMonitors" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FileEventMonitors"></a><a id="FileEventMonitors:FileEventMonitors"></a>
       <span class="permalink">
-      <a href="../../../../com/swoval/files/apple/index.html#FileEventsApi" title="Permalink">
+      <a href="../../../../com/swoval/files/apple/index.html#FileEventMonitors" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -292,13 +316,13 @@ returned by the apple file event.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="FileEventsApi$.html"><span class="name">FileEventsApi</span></a>
+        <a title="" href="FileEventMonitors$.html"><span class="name">FileEventMonitors</span></a>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@JSExportTopLevel</span><span class="args">(<span>
       
-      <span class="defval" name="&quot;com.swoval.files.apple.FileEventsApi$&quot;">...</span>
+      <span class="defval" name="&quot;com.swoval.files.apple.FileEventMonitors$&quot;">...</span>
     </span>)</span>
               
         </dd></dl></div>
