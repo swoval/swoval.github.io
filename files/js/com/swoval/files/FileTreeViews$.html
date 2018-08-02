@@ -413,24 +413,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.swoval.files.FileTreeViews.CacheObserver" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="CacheObserver[T]extendsAnyRef"></a><a id="CacheObserver[T]:CacheObserver[T]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/FileTreeViews$.html#CacheObserver[T]extendsAnyRef" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a title="Provides callbacks to run when different types of file events are detected by the cache." href="FileTreeViews$$CacheObserver.html"><span class="name">CacheObserver</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Provides callbacks to run when different types of file events are detected by the cache.</p><div class="fullcomment"><div class="comment cmt"><p>Provides callbacks to run when different types of file events are detected by the cache.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type for the <a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">FileTreeDataViews.Entry</a> data</p></dd></dl></div>
-    </li><li name="com.swoval.files.FileTreeViews.Observable" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="com.swoval.files.FileTreeViews.Observable" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Observable[T]extendsAnyRef"></a><a id="Observable[T]:Observable[T]"></a>
       <span class="permalink">
       <a href="../../../com/swoval/files/FileTreeViews$.html#Observable[T]extendsAnyRef" title="Permalink">
@@ -446,23 +429,6 @@
       </span>
       
       
-    </li><li name="com.swoval.files.FileTreeViews.ObservableCache" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="ObservableCache[T]extendsFileTreeViews.Observable[com.swoval.files.FileTreeDataViews.Entry[T]]"></a><a id="ObservableCache[T]:ObservableCache[T]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/FileTreeViews$.html#ObservableCache[T]extendsFileTreeViews.Observable[com.swoval.files.FileTreeDataViews.Entry[T]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a title="A file tree cache that can be monitored for events." href="FileTreeViews$$ObservableCache.html"><span class="name">ObservableCache</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="FileTreeViews$$Observable.html" class="extype" name="com.swoval.files.FileTreeViews.Observable">Observable</a>[<a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">Entry</a>[<span class="extype" name="com.swoval.files.FileTreeViews.ObservableCache.T">T</span>]]</span>
-      </span>
-      
-      <p class="shortcomment cmt">A file tree cache that can be monitored for events.</p><div class="fullcomment"><div class="comment cmt"><p>A file tree cache that can be monitored for events.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of data stored in the cache.</p></dd></dl></div>
     </li><li name="com.swoval.files.FileTreeViews.Observer" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="Observer[T]extendsAnyRef"></a><a id="Observer[T]:Observer[T]"></a>
       <span class="permalink">
@@ -481,9 +447,9 @@
       <p class="shortcomment cmt">Generic Observer for an <a href="FileTreeViews$$Observable.html" class="extype" name="com.swoval.files.FileTreeViews.Observable">Observable</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Generic Observer for an <a href="FileTreeViews$$Observable.html" class="extype" name="com.swoval.files.FileTreeViews.Observable">Observable</a>.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type under observation</p></dd></dl></div>
     </li><li name="com.swoval.files.FileTreeViews.Updates" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Updates[T]extendsFileTreeViews.CacheObserver[T]"></a><a id="Updates[T]:Updates[T]"></a>
+      <a id="Updates[T]extendsFileTreeDataViews.CacheObserver[T]"></a><a id="Updates[T]:Updates[T]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/FileTreeViews$.html#Updates[T]extendsFileTreeViews.CacheObserver[T]" title="Permalink">
+      <a href="../../../com/swoval/files/FileTreeViews$.html#Updates[T]extendsFileTreeDataViews.CacheObserver[T]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -492,7 +458,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="FileTreeViews$$Updates.html"><span class="name">Updates</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="FileTreeViews$$CacheObserver.html" class="extype" name="com.swoval.files.FileTreeViews.CacheObserver">CacheObserver</a>[<span class="extype" name="com.swoval.files.FileTreeViews.Updates.T">T</span>]</span>
+        <a title="" href="FileTreeViews$$Updates.html"><span class="name">Updates</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="FileTreeDataViews$$CacheObserver.html" class="extype" name="com.swoval.files.FileTreeDataViews.CacheObserver">CacheObserver</a>[<span class="extype" name="com.swoval.files.FileTreeViews.Updates.T">T</span>]</span>
       </span>
       
       

@@ -413,7 +413,24 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="com.swoval.files.FileTreeDataViews.Converter" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="com.swoval.files.FileTreeDataViews.CacheObserver" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CacheObserver[T]extendsAnyRef"></a><a id="CacheObserver[T]:CacheObserver[T]"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/FileTreeDataViews$.html#CacheObserver[T]extendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Provides callbacks to run when different types of file events are detected by the cache." href="FileTreeDataViews$$CacheObserver.html"><span class="name">CacheObserver</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Provides callbacks to run when different types of file events are detected by the cache.</p><div class="fullcomment"><div class="comment cmt"><p>Provides callbacks to run when different types of file events are detected by the cache.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type for the <a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">Entry</a> data</p></dd></dl></div>
+    </li><li name="com.swoval.files.FileTreeDataViews.Converter" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="Converter[R]extendsAnyRef"></a><a id="Converter[R]:Converter[R]"></a>
       <span class="permalink">
       <a href="../../../com/swoval/files/FileTreeDataViews$.html#Converter[R]extendsAnyRef" title="Permalink">
@@ -448,6 +465,23 @@
       <p class="shortcomment cmt">Container class for <a href="CachedDirectoryImpl.html" class="extype" name="com.swoval.files.CachedDirectoryImpl">CachedDirectoryImpl</a> entries.</p><div class="fullcomment"><div class="comment cmt"><p>Container class for <a href="CachedDirectoryImpl.html" class="extype" name="com.swoval.files.CachedDirectoryImpl">CachedDirectoryImpl</a> entries. Contains both the path to which the
 path corresponds along with a data value.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>The value wrapped in the Entry</p></dd></dl></div>
+    </li><li name="com.swoval.files.FileTreeDataViews.ObservableCache" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ObservableCache[T]extendsFileTreeViews.Observable[com.swoval.files.FileTreeDataViews.Entry[T]]"></a><a id="ObservableCache[T]:ObservableCache[T]"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/FileTreeDataViews$.html#ObservableCache[T]extendsFileTreeViews.Observable[com.swoval.files.FileTreeDataViews.Entry[T]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A file tree cache that can be monitored for events." href="FileTreeDataViews$$ObservableCache.html"><span class="name">ObservableCache</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="FileTreeViews$$Observable.html" class="extype" name="com.swoval.files.FileTreeViews.Observable">Observable</a>[<a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">Entry</a>[<span class="extype" name="com.swoval.files.FileTreeDataViews.ObservableCache.T">T</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A file tree cache that can be monitored for events.</p><div class="fullcomment"><div class="comment cmt"><p>A file tree cache that can be monitored for events.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of data stored in the cache.</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -538,7 +572,7 @@ path corresponds along with a data value.
       <p class="shortcomment cmt">Make a new <a href="DirectoryView.html" class="extype" name="com.swoval.files.DirectoryView">DirectoryView</a> that caches the file tree but has no data value associated
 with each value.</p><div class="fullcomment"><div class="comment cmt"><p>Make a new <a href="DirectoryView.html" class="extype" name="com.swoval.files.DirectoryView">DirectoryView</a> that caches the file tree but has no data value associated
 with each value.
-</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the path to monitor</p></dd><dt class="param">depth</dt><dd class="cmt"><p>sets how the limit for how deep to traverse the children of this directory</p></dd><dt class="param">followLinks</dt><dd class="cmt"><p>sets whether or not to treat symbolic links whose targets as directories or
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the data type for this view</p></dd><dt class="param">path</dt><dd class="cmt"><p>the path to monitor</p></dd><dt class="param">converter</dt><dd class="cmt"><p>computes the data value for each path found in the directory</p></dd><dt class="param">depth</dt><dd class="cmt"><p>sets how the limit for how deep to traverse the children of this directory</p></dd><dt class="param">followLinks</dt><dd class="cmt"><p>sets whether or not to treat symbolic links whose targets as directories or
     files</p></dd><dt>returns</dt><dd class="cmt"><p>a directory whose entries just contain the path itself.</p></dd></dl></div>
     </li><li name="com.swoval.files.FileTreeDataViews#cachedUpdatable" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="cachedUpdatable[T&lt;:AnyRef](path:java.nio.file.Path,converter:com.swoval.files.FileTreeDataViews.Converter[T],depth:Int,followLinks:Boolean):com.swoval.files.CachedDirectory[T]"></a><a id="cachedUpdatable[T&lt;:AnyRef](Path,Converter[T],Int,Boolean):CachedDirectory[T]"></a>
