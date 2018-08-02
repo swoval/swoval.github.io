@@ -463,9 +463,9 @@ the jvm and have little to no impact in scala.js.
       
       <p class="shortcomment cmt">Implements the PathWatcher for Mac OSX using the <a href="https://developer.apple.com/library/content/documentation/Darwin/Conceptual/FSEvents_ProgGuide/UsingtheFSEventsFramework/UsingtheFSEventsFramework.html" target="_blank">Apple File System Events Api</a>.</p>
     </li><li name="com.swoval.files.CacheObservers" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="CacheObservers[T]extendsFileTreeViews.CacheObserver[T]withAutoCloseable"></a><a id="CacheObservers[T]:CacheObservers[T]"></a>
+      <a id="CacheObservers[T]extendsFileTreeDataViews.CacheObserver[T]withAutoCloseable"></a><a id="CacheObservers[T]:CacheObservers[T]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/index.html#CacheObservers[T]extendsFileTreeViews.CacheObserver[T]withAutoCloseable" title="Permalink">
+      <a href="../../../com/swoval/files/index.html#CacheObservers[T]extendsFileTreeDataViews.CacheObserver[T]withAutoCloseable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -474,7 +474,7 @@ the jvm and have little to no impact in scala.js.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="CacheObservers.html"><span class="name">CacheObservers</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="FileTreeViews$$CacheObserver.html" class="extype" name="com.swoval.files.FileTreeViews.CacheObserver">CacheObserver</a>[<span class="extype" name="com.swoval.files.CacheObservers.T">T</span>] with <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
+        <a title="" href="CacheObservers.html"><span class="name">CacheObservers</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="FileTreeDataViews$$CacheObserver.html" class="extype" name="com.swoval.files.FileTreeDataViews.CacheObserver">CacheObserver</a>[<span class="extype" name="com.swoval.files.CacheObservers.T">T</span>] with <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
       </span>
       
       
@@ -619,9 +619,9 @@ return non-empty results for paths that are children of the root directory, spec
       
       
     </li><li name="com.swoval.files.FileCacheDirectoryTree" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FileCacheDirectoryTree[T&lt;:AnyRef]extendsFileTreeViews.ObservableCache[T]withFileTreeDataView[T]"></a><a id="FileCacheDirectoryTree[T&lt;:AnyRef]:FileCacheDirectoryTree[T]"></a>
+      <a id="FileCacheDirectoryTree[T&lt;:AnyRef]extendsFileTreeDataViews.ObservableCache[T]withFileTreeDataView[T]"></a><a id="FileCacheDirectoryTree[T&lt;:AnyRef]:FileCacheDirectoryTree[T]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/index.html#FileCacheDirectoryTree[T&lt;:AnyRef]extendsFileTreeViews.ObservableCache[T]withFileTreeDataView[T]" title="Permalink">
+      <a href="../../../com/swoval/files/index.html#FileCacheDirectoryTree[T&lt;:AnyRef]extendsFileTreeDataViews.ObservableCache[T]withFileTreeDataView[T]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -630,7 +630,7 @@ return non-empty results for paths that are children of the root directory, spec
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="FileCacheDirectoryTree.html"><span class="name">FileCacheDirectoryTree</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="FileTreeViews$$ObservableCache.html" class="extype" name="com.swoval.files.FileTreeViews.ObservableCache">ObservableCache</a>[<span class="extype" name="com.swoval.files.FileCacheDirectoryTree.T">T</span>] with <a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.FileCacheDirectoryTree.T">T</span>]</span>
+        <a title="" href="FileCacheDirectoryTree.html"><span class="name">FileCacheDirectoryTree</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="FileTreeDataViews$$ObservableCache.html" class="extype" name="com.swoval.files.FileTreeDataViews.ObservableCache">ObservableCache</a>[<span class="extype" name="com.swoval.files.FileCacheDirectoryTree.T">T</span>] with <a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.FileCacheDirectoryTree.T">T</span>]</span>
       </span>
       
       
@@ -684,9 +684,9 @@ return non-empty results for paths that are children of the root directory, spec
       <p class="shortcomment cmt">A repository for which each <span class="extype" name="java.nio.file.Path">java.nio.file.Path</span> has an associated data value.</p><div class="fullcomment"><div class="comment cmt"><p>A repository for which each <span class="extype" name="java.nio.file.Path">java.nio.file.Path</span> has an associated data value.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the data value for each path</p></dd></dl></div>
     </li><li name="com.swoval.files.FileTreeRepository" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="FileTreeRepository[T&lt;:AnyRef]extendsFileTreeDataView[T]withPathWatcher[com.swoval.files.FileTreeDataViews.Entry[T]]withFileTreeViews.ObservableCache[T]withAutoCloseable"></a><a id="FileTreeRepository[T&lt;:AnyRef]:FileTreeRepository[T]"></a>
+      <a id="FileTreeRepository[T&lt;:AnyRef]extendsFileTreeDataView[T]withPathWatcher[com.swoval.files.FileTreeDataViews.Entry[T]]withFileTreeDataViews.ObservableCache[T]withAutoCloseable"></a><a id="FileTreeRepository[T&lt;:AnyRef]:FileTreeRepository[T]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/index.html#FileTreeRepository[T&lt;:AnyRef]extendsFileTreeDataView[T]withPathWatcher[com.swoval.files.FileTreeDataViews.Entry[T]]withFileTreeViews.ObservableCache[T]withAutoCloseable" title="Permalink">
+      <a href="../../../com/swoval/files/index.html#FileTreeRepository[T&lt;:AnyRef]extendsFileTreeDataView[T]withPathWatcher[com.swoval.files.FileTreeDataViews.Entry[T]]withFileTreeDataViews.ObservableCache[T]withAutoCloseable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -695,7 +695,7 @@ return non-empty results for paths that are children of the root directory, spec
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Provides an in memory cache of portions of the file system." href="FileTreeRepository.html"><span class="name">FileTreeRepository</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.FileTreeRepository.T">T</span>] with <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a>[<a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">Entry</a>[<span class="extype" name="com.swoval.files.FileTreeRepository.T">T</span>]] with <a href="FileTreeViews$$ObservableCache.html" class="extype" name="com.swoval.files.FileTreeViews.ObservableCache">ObservableCache</a>[<span class="extype" name="com.swoval.files.FileTreeRepository.T">T</span>] with <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
+        <a title="Provides an in memory cache of portions of the file system." href="FileTreeRepository.html"><span class="name">FileTreeRepository</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.FileTreeRepository.T">T</span>] with <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a>[<a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">Entry</a>[<span class="extype" name="com.swoval.files.FileTreeRepository.T">T</span>]] with <a href="FileTreeDataViews$$ObservableCache.html" class="extype" name="com.swoval.files.FileTreeDataViews.ObservableCache">ObservableCache</a>[<span class="extype" name="com.swoval.files.FileTreeRepository.T">T</span>] with <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
       </span>
       
       <p class="shortcomment cmt">Provides an in memory cache of portions of the file system.</p><div class="fullcomment"><div class="comment cmt"><p>Provides an in memory cache of portions of the file system. Directories are added to the cache
