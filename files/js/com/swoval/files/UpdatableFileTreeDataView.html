@@ -163,6 +163,10 @@
                         <a href="CachedDirectoryImpl.html" title="Provides a mutable in-memory cache of files and subdirectories with basic CRUD functionality.">CachedDirectoryImpl</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
+                        <a class="trait" href="DirectoryDataView.html" title=""></a>
+                        <a href="DirectoryDataView.html" title="">DirectoryDataView</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
                         <a class="trait" href="DirectoryLister.html" title=""></a>
                         <a href="DirectoryLister.html" title="">DirectoryLister</a>
                       </li><li class="current-entities indented3">
@@ -352,7 +356,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">UpdatableFileTreeDataView</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.UpdatableFileTreeDataView.T">T</span>]</span>
+        <span class="name">UpdatableFileTreeDataView</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
 
@@ -361,7 +365,7 @@
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.UpdatableFileTreeDataView.T">T</span>], <a href="FileTreeView.html" class="extype" name="com.swoval.files.FileTreeView">FileTreeView</a>, <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">
               Known Subclasses
@@ -392,7 +396,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="com.swoval.files.UpdatableFileTreeDataView"><span>UpdatableFileTreeDataView</span></li><li class="in" name="com.swoval.files.FileTreeDataView"><span>FileTreeDataView</span></li><li class="in" name="com.swoval.files.FileTreeView"><span>FileTreeView</span></li><li class="in" name="java.lang.AutoCloseable"><span>AutoCloseable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="com.swoval.files.UpdatableFileTreeDataView"><span>UpdatableFileTreeDataView</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -416,68 +420,7 @@
 
         <div class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="java.lang.AutoCloseable#close" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="close():Unit"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#close():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">close</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AutoCloseable</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Exception]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="com.swoval.files.FileTreeDataView#list" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="list(path:java.nio.file.Path,maxDepth:Int,filter:com.swoval.functional.Filter[_&gt;:com.swoval.files.TypedPath]):java.util.List[com.swoval.files.TypedPath]"></a><a id="list(Path,Int,Filter[_&gt;:TypedPath]):List[TypedPath]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#list(path:java.nio.file.Path,maxDepth:Int,filter:com.swoval.functional.Filter[_&gt;:com.swoval.files.TypedPath]):java.util.List[com.swoval.files.TypedPath]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">list</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="maxDepth">maxDepth: <span class="extype" name="scala.Int">Int</span></span>, <span name="filter">filter: <a href="../functional/Filter.html" class="extype" name="com.swoval.functional.Filter">Filter</a>[_ &gt;: <a href="TypedPath.html" class="extype" name="com.swoval.files.TypedPath">TypedPath</a>]</span>)</span><span class="result">: <span class="extype" name="java.util.List">List</span>[<a href="TypedPath.html" class="extype" name="com.swoval.files.TypedPath">TypedPath</a>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">List all of the files for the <code>path</code>, returning only those files that are accepted by the
-provided filter.</p><div class="fullcomment"><div class="comment cmt"><p>List all of the files for the <code>path</code>, returning only those files that are accepted by the
-provided filter.
-</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the root path to list</p></dd><dt class="param">maxDepth</dt><dd class="cmt"><p>the maximum depth of subdirectories to query</p></dd><dt class="param">filter</dt><dd class="cmt"><p>include only paths accepted by the filter</p></dd><dt>returns</dt><dd class="cmt"><p>a List of <span class="extype" name="java.nio.file.Path">java.nio.file.Path</span> instances accepted by the filter.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a> → <a href="FileTreeView.html" class="extype" name="com.swoval.files.FileTreeView">FileTreeView</a></dd></dl></div>
-    </li><li name="com.swoval.files.FileTreeDataView#listEntries" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="listEntries(path:java.nio.file.Path,maxDepth:Int,filter:com.swoval.functional.Filter[_&gt;:com.swoval.files.FileTreeDataViews.Entry[T]]):java.util.List[com.swoval.files.FileTreeDataViews.Entry[T]]"></a><a id="listEntries(Path,Int,Filter[_&gt;:Entry[T]]):List[Entry[T]]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#listEntries(path:java.nio.file.Path,maxDepth:Int,filter:com.swoval.functional.Filter[_&gt;:com.swoval.files.FileTreeDataViews.Entry[T]]):java.util.List[com.swoval.files.FileTreeDataViews.Entry[T]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">listEntries</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="maxDepth">maxDepth: <span class="extype" name="scala.Int">Int</span></span>, <span name="filter">filter: <a href="../functional/Filter.html" class="extype" name="com.swoval.functional.Filter">Filter</a>[_ &gt;: <a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">Entry</a>[<span class="extype" name="com.swoval.files.UpdatableFileTreeDataView.T">T</span>]]</span>)</span><span class="result">: <span class="extype" name="java.util.List">List</span>[<a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">Entry</a>[<span class="extype" name="com.swoval.files.UpdatableFileTreeDataView.T">T</span>]]</span>
-      </span>
-      
-      <p class="shortcomment cmt">List all of the files for the <code>path</code> that are accepted by the <code>filter</code>.</p><div class="fullcomment"><div class="comment cmt"><p>List all of the files for the <code>path</code> that are accepted by the <code>filter</code>.
-</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the path to list. If this is a file, returns a list containing the Entry for the
-    file or an empty list if the file is not monitored by the path.</p></dd><dt class="param">maxDepth</dt><dd class="cmt"><p>the maximum depth of subdirectories to return</p></dd><dt class="param">filter</dt><dd class="cmt"><p>include only paths accepted by this</p></dd><dt>returns</dt><dd class="cmt"><p>a List of Entry instances accepted by the filter. The list will be empty if the path is
-    not a subdirectory of this CachedDirectory or if it is a subdirectory, but the
-    CachedDirectory was created without the recursive flag.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a></dd></dl></div>
-    </li><li name="com.swoval.files.UpdatableFileTreeDataView#remove" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="com.swoval.files.UpdatableFileTreeDataView#remove" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="remove(path:java.nio.file.Path):java.util.List[com.swoval.files.FileTreeDataViews.Entry[T]]"></a><a id="remove(Path):List[Entry[T]]"></a>
       <span class="permalink">
       <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#remove(path:java.nio.file.Path):java.util.List[com.swoval.files.FileTreeDataViews.Entry[T]]" title="Permalink">
@@ -881,13 +824,7 @@ provided filter.
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="com.swoval.files.FileTreeDataView">
-              <h3>Inherited from <a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.UpdatableFileTreeDataView.T">T</span>]</h3>
-            </div><div class="parent" name="com.swoval.files.FileTreeView">
-              <h3>Inherited from <a href="FileTreeView.html" class="extype" name="com.swoval.files.FileTreeView">FileTreeView</a></h3>
-            </div><div class="parent" name="java.lang.AutoCloseable">
-              <h3>Inherited from <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

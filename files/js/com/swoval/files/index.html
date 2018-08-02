@@ -163,6 +163,10 @@
                         <a href="CachedDirectoryImpl.html" title="Provides a mutable in-memory cache of files and subdirectories with basic CRUD functionality.">CachedDirectoryImpl</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
+                        <a class="trait" href="DirectoryDataView.html" title=""></a>
+                        <a href="DirectoryDataView.html" title="">DirectoryDataView</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
                         <a class="trait" href="DirectoryLister.html" title=""></a>
                         <a href="DirectoryLister.html" title="">DirectoryLister</a>
                       </li><li class="current-entities indented3">
@@ -475,9 +479,9 @@ the jvm and have little to no impact in scala.js.
       
       
     </li><li name="com.swoval.files.CachedDirectory" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="CachedDirectory[T&lt;:AnyRef]extendsUpdatableFileTreeDataView[T]withDirectoryViewwithAutoCloseable"></a><a id="CachedDirectory[T&lt;:AnyRef]:CachedDirectory[T]"></a>
+      <a id="CachedDirectory[T&lt;:AnyRef]extendsUpdatableFileTreeDataView[T]withDirectoryDataView[T]withAutoCloseable"></a><a id="CachedDirectory[T&lt;:AnyRef]:CachedDirectory[T]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/index.html#CachedDirectory[T&lt;:AnyRef]extendsUpdatableFileTreeDataView[T]withDirectoryViewwithAutoCloseable" title="Permalink">
+      <a href="../../../com/swoval/files/index.html#CachedDirectory[T&lt;:AnyRef]extendsUpdatableFileTreeDataView[T]withDirectoryDataView[T]withAutoCloseable" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -486,7 +490,7 @@ the jvm and have little to no impact in scala.js.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="CachedDirectory.html"><span class="name">CachedDirectory</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="UpdatableFileTreeDataView.html" class="extype" name="com.swoval.files.UpdatableFileTreeDataView">UpdatableFileTreeDataView</a>[<span class="extype" name="com.swoval.files.CachedDirectory.T">T</span>] with <a href="DirectoryView.html" class="extype" name="com.swoval.files.DirectoryView">DirectoryView</a> with <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
+        <a title="" href="CachedDirectory.html"><span class="name">CachedDirectory</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="UpdatableFileTreeDataView.html" class="extype" name="com.swoval.files.UpdatableFileTreeDataView">UpdatableFileTreeDataView</a>[<span class="extype" name="com.swoval.files.CachedDirectory.T">T</span>] with <a href="DirectoryDataView.html" class="extype" name="com.swoval.files.DirectoryDataView">DirectoryDataView</a>[<span class="extype" name="com.swoval.files.CachedDirectory.T">T</span>] with <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
       </span>
       
       
@@ -516,6 +520,22 @@ traverse them. A depth <code>< 0</code> means that it should not cache any files
 within the directory. In the event that a loop is created by symlinks, the CachedDirectory will
 include the symlink that completes the loop, but will not descend further (inducing a loop).
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the cache value type.</p></dd></dl></div>
+    </li><li name="com.swoval.files.DirectoryDataView" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DirectoryDataView[T&lt;:AnyRef]extendsFileTreeDataView[T]withDirectoryView"></a><a id="DirectoryDataView[T&lt;:AnyRef]:DirectoryDataView[T]"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/index.html#DirectoryDataView[T&lt;:AnyRef]extendsFileTreeDataView[T]withDirectoryView" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="DirectoryDataView.html"><span class="name">DirectoryDataView</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.DirectoryDataView.T">T</span>] with <a href="DirectoryView.html" class="extype" name="com.swoval.files.DirectoryView">DirectoryView</a></span>
+      </span>
+      
+      
     </li><li name="com.swoval.files.DirectoryLister" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="DirectoryListerextendsAnyRef"></a><a id="DirectoryLister:DirectoryLister"></a>
       <span class="permalink">
@@ -1063,9 +1083,9 @@ provided <a href="../functional/Consumer.html" class="extype" name="com.swoval.f
 the type of the file.
 </p></div></div>
     </li><li name="com.swoval.files.UpdatableFileTreeDataView" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="UpdatableFileTreeDataView[T&lt;:AnyRef]extendsFileTreeDataView[T]"></a><a id="UpdatableFileTreeDataView[T&lt;:AnyRef]:UpdatableFileTreeDataView[T]"></a>
+      <a id="UpdatableFileTreeDataView[T&lt;:AnyRef]extendsAnyRef"></a><a id="UpdatableFileTreeDataView[T&lt;:AnyRef]:UpdatableFileTreeDataView[T]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/index.html#UpdatableFileTreeDataView[T&lt;:AnyRef]extendsFileTreeDataView[T]" title="Permalink">
+      <a href="../../../com/swoval/files/index.html#UpdatableFileTreeDataView[T&lt;:AnyRef]extendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1074,7 +1094,7 @@ the type of the file.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="UpdatableFileTreeDataView.html"><span class="name">UpdatableFileTreeDataView</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <a href="FileTreeDataView.html" class="extype" name="com.swoval.files.FileTreeDataView">FileTreeDataView</a>[<span class="extype" name="com.swoval.files.UpdatableFileTreeDataView.T">T</span>]</span>
+        <a title="" href="UpdatableFileTreeDataView.html"><span class="name">UpdatableFileTreeDataView</span></a><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
       
