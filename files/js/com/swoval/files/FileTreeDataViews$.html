@@ -175,6 +175,10 @@
                         <a href="DirectoryListers$.html" title="">DirectoryListers</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
+                        <a class="object" href="DirectoryRegistries$.html" title=""></a>
+                        <a href="DirectoryRegistries$.html" title="">DirectoryRegistries</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
                         <a class="trait" href="DirectoryRegistry.html" title=""></a>
                         <a href="DirectoryRegistry.html" title="">DirectoryRegistry</a>
                       </li><li class="current-entities indented3">
@@ -574,24 +578,6 @@ with each value.</p><div class="fullcomment"><div class="comment cmt"><p>Make a 
 with each value.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the data type for this view</p></dd><dt class="param">path</dt><dd class="cmt"><p>the path to monitor</p></dd><dt class="param">converter</dt><dd class="cmt"><p>computes the data value for each path found in the directory</p></dd><dt class="param">depth</dt><dd class="cmt"><p>sets how the limit for how deep to traverse the children of this directory</p></dd><dt class="param">followLinks</dt><dd class="cmt"><p>sets whether or not to treat symbolic links whose targets as directories or
     files</p></dd><dt>returns</dt><dd class="cmt"><p>a directory whose entries just contain the path itself.</p></dd></dl></div>
-    </li><li name="com.swoval.files.FileTreeDataViews#cachedUpdatable" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="cachedUpdatable[T&lt;:AnyRef](path:java.nio.file.Path,converter:com.swoval.files.FileTreeDataViews.Converter[T],depth:Int,followLinks:Boolean):com.swoval.files.CachedDirectory[T]"></a><a id="cachedUpdatable[T&lt;:AnyRef](Path,Converter[T],Int,Boolean):CachedDirectory[T]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/FileTreeDataViews$.html#cachedUpdatable[T&lt;:AnyRef](path:java.nio.file.Path,converter:com.swoval.files.FileTreeDataViews.Converter[T],depth:Int,followLinks:Boolean):com.swoval.files.CachedDirectory[T]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cachedUpdatable</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="converter">converter: <a href="FileTreeDataViews$$Converter.html" class="extype" name="com.swoval.files.FileTreeDataViews.Converter">Converter</a>[<span class="extype" name="com.swoval.files.FileTreeDataViews.cachedUpdatable.T">T</span>]</span>, <span name="depth">depth: <span class="extype" name="scala.Int">Int</span></span>, <span name="followLinks">followLinks: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="CachedDirectory.html" class="extype" name="com.swoval.files.CachedDirectory">CachedDirectory</a>[<span class="extype" name="com.swoval.files.FileTreeDataViews.cachedUpdatable.T">T</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Make a new CachedDirectory with a cache entries created by <code>converter</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Make a new CachedDirectory with a cache entries created by <code>converter</code>.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the cache value type</p></dd><dt class="param">path</dt><dd class="cmt"><p>the path to cache</p></dd><dt class="param">converter</dt><dd class="cmt"><p>a function to create the cache value for each path</p></dd><dt class="param">depth</dt><dd class="cmt"><p>determines how many levels of children of subdirectories to include in the results</p></dd><dt class="param">followLinks</dt><dd class="cmt"><p>sets whether or not to treat symbolic links whose targets as directories or
-    files</p></dd><dt>returns</dt><dd class="cmt"><p>a directory with entries of type T.</p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
