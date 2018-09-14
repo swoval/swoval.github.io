@@ -291,8 +291,8 @@
                         <a href="PathWatchers$.html" title="">PathWatchers</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="class" href="PollingPathWatcher.html" title=""></a>
-                        <a href="PollingPathWatcher.html" title="">PollingPathWatcher</a>
+                        <a class="class" href="" title=""></a>
+                        <a href="" title="">PollingPathWatcher</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="trait" href="RegisterableWatchService.html" title="Augments the java.nio.file.WatchService with a RegisterableWatchService.register method."></a>
@@ -331,8 +331,8 @@
                         <a href="TypedPaths$.html" title="">TypedPaths</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
-                        <a class="trait" href="" title=""></a>
-                        <a href="" title="">UpdatableFileTreeDataView</a>
+                        <a class="trait" href="UpdatableFileTreeDataView.html" title=""></a>
+                        <a href="UpdatableFileTreeDataView.html" title="">UpdatableFileTreeDataView</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="object" href="WatchedDirectories$.html" title=""></a>
@@ -346,12 +346,12 @@
             </div>
           </div>
           <div id="content">
-            <body class="trait type">
+            <body class="class type">
       <div id="definition">
-        <div class="big-circle trait">t</div>
+        <div class="big-circle class">c</div>
         <p id="owner"><a href="../../index.html" class="extype" name="com">com</a>.<a href="../index.html" class="extype" name="com.swoval">swoval</a>.<a href="index.html" class="extype" name="com.swoval.files">files</a></p>
-        <h1>UpdatableFileTreeDataView<span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html" title="Permalink">
+        <h1>PollingPathWatcher<span class="permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -361,10 +361,10 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">UpdatableFileTreeDataView</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">PollingPathWatcher</span><span class="result"> extends <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a>[<a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>]</span>
       </span>
       </h4>
 
@@ -373,13 +373,8 @@
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">
-              Known Subclasses
-            </span>
-            <div class="subClasses hiddenContent"><a href="CachedDirectory.html" class="extype" name="com.swoval.files.CachedDirectory">CachedDirectory</a>, <a href="CachedDirectoryImpl.html" class="extype" name="com.swoval.files.CachedDirectoryImpl">CachedDirectoryImpl</a></div>
-          </div></div>
+          <div class="superTypes hiddenContent"><a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a>[<a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>], <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span>, <a href="FileTreeViews$$Observable.html" class="extype" name="com.swoval.files.FileTreeViews.Observable">Observable</a>[<a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -404,7 +399,7 @@
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="com.swoval.files.UpdatableFileTreeDataView"><span>UpdatableFileTreeDataView</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="com.swoval.files.PollingPathWatcher"><span>PollingPathWatcher</span></li><li class="in" name="com.swoval.files.PathWatcher"><span>PathWatcher</span></li><li class="in" name="java.lang.AutoCloseable"><span>AutoCloseable</span></li><li class="in" name="com.swoval.files.FileTreeViews.Observable"><span>Observable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -422,60 +417,38 @@
 
       <div id="template">
         <div id="allMembers">
-        
-
-        
-
-        <div class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="com.swoval.files.UpdatableFileTreeDataView#remove" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="remove(path:java.nio.file.Path):java.util.List[com.swoval.files.FileTreeDataViews.Entry[T]]"></a><a id="remove(Path):List[Entry[T]]"></a>
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="com.swoval.files.PollingPathWatcher#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(followLinks:Boolean,pollInterval:Long,timeUnit:java.util.concurrent.TimeUnit):com.swoval.files.PollingPathWatcher"></a><a id="&lt;init&gt;:PollingPathWatcher"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#remove(path:java.nio.file.Path):java.util.List[com.swoval.files.FileTreeDataViews.Entry[T]]" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#&lt;init&gt;(followLinks:Boolean,pollInterval:Long,timeUnit:java.util.concurrent.TimeUnit):com.swoval.files.PollingPathWatcher" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
+        <span class="modifier"></span>
+        <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">remove</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="result">: <span class="extype" name="java.util.List">List</span>[<a href="FileTreeDataViews$$Entry.html" class="extype" name="com.swoval.files.FileTreeDataViews.Entry">Entry</a>[<span class="extype" name="com.swoval.files.UpdatableFileTreeDataView.T">T</span>]]</span>
+        <span class="name">PollingPathWatcher</span><span class="params">(<span name="followLinks">followLinks: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="pollInterval">pollInterval: <span class="extype" name="scala.Long">Long</span></span>, <span name="timeUnit">timeUnit: <span class="extype" name="java.util.concurrent.TimeUnit">TimeUnit</span></span>)</span>
       </span>
       
-      <p class="shortcomment cmt">Remove a path from the directory.</p><div class="fullcomment"><div class="comment cmt"><p>Remove a path from the directory.
-</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the path to remove</p></dd><dt>returns</dt><dd class="cmt"><p>a List containing the Entry instances for the removed path. The result also contains
-    the cache entries for any children of the path when the path is a non-empty directory.</p></dd></dl></div>
-    </li><li name="com.swoval.files.UpdatableFileTreeDataView#update" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="update(typedPath:com.swoval.files.TypedPath):com.swoval.files.FileTreeViews.Updates[T]"></a><a id="update(TypedPath):Updates[T]"></a>
-      <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#update(typedPath:com.swoval.files.TypedPath):com.swoval.files.FileTreeViews.Updates[T]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">update</span><span class="params">(<span name="typedPath">typedPath: <a href="TypedPath.html" class="extype" name="com.swoval.files.TypedPath">TypedPath</a></span>)</span><span class="result">: <a href="FileTreeViews$$Updates.html" class="extype" name="com.swoval.files.FileTreeViews.Updates">Updates</a>[<span class="extype" name="com.swoval.files.UpdatableFileTreeDataView.T">T</span>]</span>
-      </span>
       
-      <p class="shortcomment cmt">Updates the CachedDirectory entry for a particular typed path.</p><div class="fullcomment"><div class="comment cmt"><p>Updates the CachedDirectory entry for a particular typed path.
-</p></div><dl class="paramcmts block"><dt class="param">typedPath</dt><dd class="cmt"><p>the path to update</p></dd><dt>returns</dt><dd class="cmt"><p>a list of updates for the path. When the path is new, the updates have the
-    oldCachedPath field set to null and will contain all of the children of the new path when
-    it is a directory. For an existing path, the List contains a single Updates that contains
-    the previous and new <span class="extype" name="Entry">Entry</span>.</p></dd></dl></div>
     </li></ol>
             </div>
 
+        
+
+        
+
         <div class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol>
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -491,7 +464,7 @@
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html###():Int" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -507,7 +480,7 @@
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -520,10 +493,27 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.swoval.files.PollingPathWatcher#addObserver" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addObserver(observer:com.swoval.files.FileTreeViews.Observer[_&gt;:com.swoval.files.PathWatchers.Event]):Int"></a><a id="addObserver(Observer[_&gt;:Event]):Int"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#addObserver(observer:com.swoval.files.FileTreeViews.Observer[_&gt;:com.swoval.files.PathWatchers.Event]):Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addObserver</span><span class="params">(<span name="observer">observer: <a href="FileTreeViews$$Observer.html" class="extype" name="com.swoval.files.FileTreeViews.Observer">Observer</a>[_ &gt;: <a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Add an observer of events.</p><div class="fullcomment"><div class="comment cmt"><p>Add an observer of events.
+</p></div><dl class="paramcmts block"><dt class="param">observer</dt><dd class="cmt"><p>the observer to add</p></dd><dt>returns</dt><dd class="cmt"><p>the handle to the observer.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.swoval.files.PollingPathWatcher">PollingPathWatcher</a> → <a href="FileTreeViews$$Observable.html" class="extype" name="com.swoval.files.FileTreeViews.Observable">Observable</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -539,7 +529,7 @@
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#clone():Object" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -560,10 +550,27 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="com.swoval.files.PollingPathWatcher#close" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="close():Unit"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#close():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">close</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt"> Catch any exceptions in subclasses.</p><div class="fullcomment"><div class="comment cmt"><p> Catch any exceptions in subclasses.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.swoval.files.PollingPathWatcher">PollingPathWatcher</a> → <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a> → AutoCloseable</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -579,7 +586,7 @@
     </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#equals(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#equals(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -595,7 +602,7 @@
     </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#finalize():Unit" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -617,7 +624,7 @@
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#getClass():Class[_]" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -636,7 +643,7 @@
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#hashCode():Int" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#hashCode():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -655,7 +662,7 @@
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -671,7 +678,7 @@
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -687,7 +694,7 @@
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#notify():Unit" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -706,7 +713,7 @@
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#notifyAll():Unit" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -722,10 +729,51 @@
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="com.swoval.files.PollingPathWatcher#register" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="register(path:java.nio.file.Path,maxDepth:Int):com.swoval.functional.Either[java.io.IOException,Boolean]"></a><a id="register(Path,Int):Either[IOException,Boolean]"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#register(path:java.nio.file.Path,maxDepth:Int):com.swoval.functional.Either[java.io.IOException,Boolean]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">register</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>, <span name="maxDepth">maxDepth: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="../functional/Either.html" class="extype" name="com.swoval.functional.Either">Either</a>[<span class="extype" name="java.io.IOException">IOException</span>, <span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Register a path to monitor for file events.</p><div class="fullcomment"><div class="comment cmt"><p>Register a path to monitor for file events. The watcher will only watch child subdirectories up
+to maxDepth. For example, with a directory structure like /foo/bar/baz, if we register the path
+/foo/ with maxDepth 0, we will be notified for any files that are created, updated or deleted
+in foo, but not bar. If we increase maxDepth to 1, then the files in /foo/bar are monitored,
+but not the files in /foo/bar/baz.
+</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the directory to watch for file events</p></dd><dt class="param">maxDepth</dt><dd class="cmt"><p>the maximum maxDepth of subdirectories to watch</p></dd><dt>returns</dt><dd class="cmt"><p>an <a href="../functional/Either.html" class="extype" name="com.swoval.functional.Either">com.swoval.functional.Either</a> containing the result of the registration or an
+    IOException if registration fails. This method should be idempotent and return true the
+    first time the directory is registered or when the depth is changed. Otherwise it should
+    return false.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.swoval.files.PollingPathWatcher">PollingPathWatcher</a> → <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a></dd></dl></div>
+    </li><li name="com.swoval.files.PollingPathWatcher#removeObserver" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="removeObserver(handle:Int):Unit"></a><a id="removeObserver(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#removeObserver(handle:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeObserver</span><span class="params">(<span name="handle">handle: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Remove an observer.</p><div class="fullcomment"><div class="comment cmt"><p>Remove an observer.
+</p></div><dl class="paramcmts block"><dt class="param">handle</dt><dd class="cmt"><p>the handle that was returned by addObserver</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.swoval.files.PollingPathWatcher">PollingPathWatcher</a> → <a href="FileTreeViews$$Observable.html" class="extype" name="com.swoval.files.FileTreeViews.Observable">Observable</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -741,7 +789,7 @@
     </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#toString():String" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#toString():String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -754,10 +802,27 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="com.swoval.files.PollingPathWatcher#unregister" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unregister(path:java.nio.file.Path):Unit"></a><a id="unregister(Path):Unit"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#unregister(path:java.nio.file.Path):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unregister</span><span class="params">(<span name="path">path: <span class="extype" name="java.nio.file.Path">Path</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Stop watching a path.</p><div class="fullcomment"><div class="comment cmt"><p>Stop watching a path.
+</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the path to remove from monitoring</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.swoval.files.PollingPathWatcher">PollingPathWatcher</a> → <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#wait():Unit" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -779,7 +844,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -801,7 +866,7 @@
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/UpdatableFileTreeDataView.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../../com/swoval/files/PollingPathWatcher.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -832,7 +897,13 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="com.swoval.files.PathWatcher">
+              <h3>Inherited from <a href="PathWatcher.html" class="extype" name="com.swoval.files.PathWatcher">PathWatcher</a>[<a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>]</h3>
+            </div><div class="parent" name="java.lang.AutoCloseable">
+              <h3>Inherited from <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></h3>
+            </div><div class="parent" name="com.swoval.files.FileTreeViews.Observable">
+              <h3>Inherited from <a href="FileTreeViews$$Observable.html" class="extype" name="com.swoval.files.FileTreeViews.Observable">Observable</a>[<a href="PathWatchers$$Event.html" class="extype" name="com.swoval.files.PathWatchers.Event">Event</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
