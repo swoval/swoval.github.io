@@ -133,6 +133,22 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="com.swoval.files">files</a></dd></dl></div>
+    </li><li name="com.swoval.files.node" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="node"></a><a id="node:node"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/index.html#node" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="node/index.html"><span class="name">node</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="com.swoval.files">files</a></dd></dl></div>
     </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="AppleFileEventStreams.html" title=""></a>
@@ -245,18 +261,6 @@
                         <span class="separator"></span>
                         <a class="trait" href="Function.html" title="Functional interface for a function that takes one argument."></a>
                         <a href="Function.html" title="Functional interface for a function that takes one argument.">Function</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
-                        <a class="class" href="JSEntry.html" title=""></a>
-                        <a href="JSEntry.html" title="">JSEntry</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
-                        <a class="class" href="JsFileCache.html" title=""></a>
-                        <a href="JsFileCache.html" title="">JsFileCache</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
-                        <a class="class" href="JsPathWatcher.html" title=""></a>
-                        <a href="JsPathWatcher.html" title="">JsPathWatcher</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="Lockable.html" title=""></a>
@@ -372,9 +376,9 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Provides an in memory cache of portions of the file system. Directories are added to the cache
 using the <a href="#register(path:java.nio.file.Path,maxDepth:Int):com.swoval.functional.Either[java.io.IOException,Boolean]" class="extmbr" name="com.swoval.files.FileTreeRepository#register">FileTreeRepository.register</a> method. Once a Path is added the cache, its
 contents may be retrieved using the <a href="#list(path:java.nio.file.Path,maxDepth:Int,filter:com.swoval.functional.Filter[_&gt;:com.swoval.files.TypedPath]):java.util.List[com.swoval.files.TypedPath]" class="extmbr" name="com.swoval.files.FileTreeRepository#list">FileTreeRepository.list</a> method. The cache stores the
-path information in <span class="extype" name="Entry">Entry</span> instances.</p><p>A default implementation is provided by <a href="FileTreeRepositories$.html#get[T&lt;:AnyRef](followLinks:Boolean,converter:com.swoval.files.FileTreeDataViews.Converter[T]):com.swoval.files.FileTreeRepository[T]" class="extmbr" name="com.swoval.files.FileTreeRepositories#get">FileTreeRepositories.get</a>. The user may cache
+path information in <span class="extype" name="Entry">Entry</span> instances.</p><p>A default implementation is provided by <a href="FileTreeRepositories$.html#get[T&lt;:AnyRef](converter:com.swoval.files.FileTreeDataViews.Converter[T],followLinks:Boolean):com.swoval.files.FileTreeRepository[T]" class="extmbr" name="com.swoval.files.FileTreeRepositories#get">FileTreeRepositories.get</a>. The user may cache
 arbitrary information in the cache by customizing the <span class="extype" name="Converter">Converter</span> that is passed into the
-factory <a href="FileTreeRepositories$.html#get[T&lt;:AnyRef](followLinks:Boolean,converter:com.swoval.files.FileTreeDataViews.Converter[T]):com.swoval.files.FileTreeRepository[T]" class="extmbr" name="com.swoval.files.FileTreeRepositories#get">FileTreeRepositories.get</a>.</p><p>The cache allows the user to register a regular file, directory or symbolic link. After
+factory <a href="FileTreeRepositories$.html#get[T&lt;:AnyRef](converter:com.swoval.files.FileTreeDataViews.Converter[T],followLinks:Boolean):com.swoval.files.FileTreeRepository[T]" class="extmbr" name="com.swoval.files.FileTreeRepositories#get">FileTreeRepositories.get</a>.</p><p>The cache allows the user to register a regular file, directory or symbolic link. After
 registration, the cache should monitor the path (and in the case of symbolic links, the target of
 the link) for updates. Whenever an update is detected, the cache updates its internal
 representation of the file system. When that is complete, it will notify all of the registered

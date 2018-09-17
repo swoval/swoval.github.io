@@ -133,6 +133,22 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="com.swoval.files">files</a></dd></dl></div>
+    </li><li name="com.swoval.files.node" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="node"></a><a id="node:node"></a>
+      <span class="permalink">
+      <a href="../../../com/swoval/files/index.html#node" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="node/index.html"><span class="name">node</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="com.swoval.files">files</a></dd></dl></div>
     </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="AppleFileEventStreams.html" title=""></a>
@@ -245,18 +261,6 @@
                         <span class="separator"></span>
                         <a class="trait" href="Function.html" title="Functional interface for a function that takes one argument."></a>
                         <a href="Function.html" title="Functional interface for a function that takes one argument.">Function</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
-                        <a class="class" href="JSEntry.html" title=""></a>
-                        <a href="JSEntry.html" title="">JSEntry</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
-                        <a class="class" href="JsFileCache.html" title=""></a>
-                        <a href="JsFileCache.html" title="">JsFileCache</a>
-                      </li><li class="current-entities indented3">
-                        <span class="separator"></span>
-                        <a class="class" href="JsPathWatcher.html" title=""></a>
-                        <a href="JsPathWatcher.html" title="">JsPathWatcher</a>
                       </li><li class="current-entities indented3">
                         <span class="separator"></span>
                         <a class="class" href="Lockable.html" title=""></a>
@@ -569,9 +573,9 @@
               
         </dd></dl></div>
     </li><li name="com.swoval.files.FileTreeRepositories#get" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="get[T&lt;:AnyRef](followLinks:Boolean,converter:com.swoval.files.FileTreeDataViews.Converter[T]):com.swoval.files.FileTreeRepository[T]"></a><a id="get[T&lt;:AnyRef](Boolean,Converter[T]):FileTreeRepository[T]"></a>
+      <a id="get[T&lt;:AnyRef](converter:com.swoval.files.FileTreeDataViews.Converter[T],followLinks:Boolean):com.swoval.files.FileTreeRepository[T]"></a><a id="get[T&lt;:AnyRef](Converter[T],Boolean):FileTreeRepository[T]"></a>
       <span class="permalink">
-      <a href="../../../com/swoval/files/FileTreeRepositories$.html#get[T&lt;:AnyRef](followLinks:Boolean,converter:com.swoval.files.FileTreeDataViews.Converter[T]):com.swoval.files.FileTreeRepository[T]" title="Permalink">
+      <a href="../../../com/swoval/files/FileTreeRepositories$.html#get[T&lt;:AnyRef](converter:com.swoval.files.FileTreeDataViews.Converter[T],followLinks:Boolean):com.swoval.files.FileTreeRepository[T]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -580,16 +584,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">get</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="followLinks">followLinks: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="converter">converter: <a href="FileTreeDataViews$$Converter.html" class="extype" name="com.swoval.files.FileTreeDataViews.Converter">Converter</a>[<span class="extype" name="com.swoval.files.FileTreeRepositories.get.T">T</span>]</span>)</span><span class="result">: <a href="FileTreeRepository.html" class="extype" name="com.swoval.files.FileTreeRepository">FileTreeRepository</a>[<span class="extype" name="com.swoval.files.FileTreeRepositories.get.T">T</span>]</span>
+        <span class="name">get</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="converter">converter: <a href="FileTreeDataViews$$Converter.html" class="extype" name="com.swoval.files.FileTreeDataViews.Converter">Converter</a>[<span class="extype" name="com.swoval.files.FileTreeRepositories.get.T">T</span>]</span>, <span name="followLinks">followLinks: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="FileTreeRepository.html" class="extype" name="com.swoval.files.FileTreeRepository">FileTreeRepository</a>[<span class="extype" name="com.swoval.files.FileTreeRepositories.get.T">T</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Create a file tree repository.</p><div class="fullcomment"><div class="comment cmt"><p>Create a file tree repository.
-</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the value type of the cache entries</p></dd><dt class="param">followLinks</dt><dd class="cmt"><p>toggles whether or not to follow symbolic links. When true, any symbolic
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the value type of the cache entries</p></dd><dt class="param">converter</dt><dd class="cmt"><p>converts a path to the cached value type T</p></dd><dt class="param">followLinks</dt><dd class="cmt"><p>toggles whether or not to follow symbolic links. When true, any symbolic
     links that point to a regular file will trigger an event when the target file is modified.
     For any symbolic links that point to a directory, the children of the target directory will
     be included (up to the max depth parameter specified by <span class="extype" name="">FileTreeRepository.register</span>) and will trigger an event when any of the included children
     are modified. When false, symbolic links are not followed and only events for the symbolic
-    link itself are reported.</p></dd><dt class="param">converter</dt><dd class="cmt"><p>converts a path to the cached value type T</p></dd><dt>returns</dt><dd class="cmt"><p>a file tree repository.</p></dd></dl></div>
+    link itself are reported.</p></dd><dt>returns</dt><dd class="cmt"><p>a file tree repository.</p></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
