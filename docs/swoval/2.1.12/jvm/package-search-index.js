@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.swoval.concurrent"},{"l":"com.swoval.files"},{"l":"com.swoval.files.apple"},{"l":"com.swoval.functional"},{"l":"com.swoval.logging"},{"l":"com.swoval.runtime"}]
